@@ -1,0 +1,96 @@
+/* Author: TAISEN 
+   Date: 8 March 2024 
+   Lab 1: Styling for Diwai Bank Ltd 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header - Green background with centered black text */
+.header {
+    background-color: #008000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24pt;
+    color: black;
+}
+
+/* Navigation - Yellow background */
+.nav {
+    background-color: #ffff00;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #0000ee;
+    display: block;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+/* Active/Hover state matching the gray "Personal Banking" tab */
+.nav ul li.active, .nav ul li:hover {
+    background-color: #d3d3d3;
+}
+
+.nav ul li.active a, .nav ul li:hover a {
+    color: black;
+}
+
+/* Main Content Layout */
+.content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding: 30px;
+    min-height: 300px;
+}
+
+.transfer h2, .dashboard h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.transfer ul {
+    list-style: none;
+}
+
+.transfer ul li {
+    margin-bottom: 5px;
+}
+
+.transfer ul li a {
+    color: #551a8b;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.dashboard p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Footer - Light gray background with black text */
+.footer {
+    background-color: #eeeeee;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #ddd;
+}
