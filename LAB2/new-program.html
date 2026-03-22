@@ -1,0 +1,37 @@
+<!-- Author: TAISEN -->
+<!-- Date: 22 March 2026 -->
+<!-- Unit: IS312 Web Application Development -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Program</title>
+    <script>
+        function validateForm() {
+            let code = document.forms["progForm"]["code"].value;
+            let name = document.forms["progForm"]["name"].value;
+
+            if (code == "" || name == "") {
+                alert("All fields must be filled!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body style="background-color:#004d00; text-align:center; font-family:Arial; color:white;">
+
+<h2 style="margin-top:40px;">Add New Program</h2>
+
+<form name="progForm" action="addnewprogram.php" method="POST" onsubmit="return validateForm()" style="margin-top:30px;">
+    Program Code: 
+    <input type="text" name="code" style="padding:8px; border-radius:5px; border:none; width:200px;"><br><br>
+    
+    Program Name: 
+    <input type="text" name="name" style="padding:8px; border-radius:5px; border:none; width:200px;"><br><br>
+    
+    <input type="submit" value="Add Program" 
+           style="display:block; width:200px; margin:20px auto; padding:15px; background-color:#008000; color:white; font-weight:bold; border-radius:8px; border:none; cursor:pointer;">
+</form>
+
+</body>
+</html>
